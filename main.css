@@ -1,3 +1,35 @@
+#index-body {
+  background: url('IMG_6203.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.navbar {
+    background-color: transparent;
+    border: none;
+}
+#test111 {
+    color: white !important;
+}
+.navbar a{
+        font-family: 'Raleway', sans-serif;
+    color: white !important;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.navbar a:hover {
+    color: #ffffff !important;
+    border-bottom: 3px solid;
+    border-bottom-color: #2e8b57;
+    padding-bottom: 2px;
+    transition: .5s;
+}
+
 .profile {
     position: relative;
     display: inline-block;
