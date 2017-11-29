@@ -1,15 +1,45 @@
-#index-body {
-  background: url('IMG_6203.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+.navbar {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-brand {
+  -webkit-transform: scale3d(1.15, 1.15, 1);
+          transform: scale3d(1.15, 1.15, 1);
+}
+.navbar-hover a{
+    font-family: 'Raleway', sans-serif;
+    color: white !important;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.navbar-hover a:hover {
+    color: grey !important;
+    border-bottom: 3px solid;
+    border-bottom-color: #2e8b57;
+    padding-bottom: 2px;
+    transition: .5s;
+}
+
+#cover-page {
+    background: url('IMG_6203.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: 125vh;
+    position: relative;
+}
+
+#cover-page-text {
+    color: white;
     font-family: 'Oswald', sans-serif;
 }
 
 #home-title {
-        font-size: 200px;
-    color: white;
+    font-size: 200px;
     font-style: italic;
     position: relative;
     top: 40px;
@@ -17,18 +47,96 @@
 
 #home-subtitle {
     font-size: 100px;
-    color: white;
     transition: .5s;
     border-top: 0px solid;
     position: relative;
     bottom: 20px;
 }
+#home-button {
+    font-size: 25px;
+    padding: 5px;
+/*    border: solid 2px;*/
+    text-decoration: none !important;
+    color: white !important;
+    transition: .5s;
+    background-color: transparent !important;
+    top: 300px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
 
-header {
-    font-family: 'Oswald', sans-serif;  
+#home-button:hover{
+    width: 500px;
+    transition: .5s;
+    color: seagreen !important;
+}
+
+#home-button:hover + #home-subtitle {
     color: white;
-    font-size: 100px;
+    border-top: 5px solid;
+    border-top-color: seagreen;
+    border-top-width: 10px;
+    transition: .5s;
+    font-size: 115px;
+}
+.bottom-curve {
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#about {
+    min-height: 125vh;
+    font-family: 'Oswald', sans-serif;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     text-align: center;
+    position: relative;
+}
+
+.about-header {
+    text-align: center;
+    background-color: transparent;
+    font-size: 50px;
+    color: #1d5d39;
+}
+
+.about-text {
+    font-size: 20px;
+}
+
+#about-links {
+    margin-top: 50px;   
+}
+.about-link {
+    font-size: 25px;
+    color: #1d5d39;
+    transition: .5s;
+}
+
+.about-link:hover {
+    color: #1d5d39;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 30px;
+    border-bottom: solid 5px;
+}
+
+footer {
+    background-color: #1d5d39;
+    min-height: 10vh;
+}
+
+#roster-page {
+    background: url('IMG_5806.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    min-height: 125vh;
 }
 #14-gen {
     text-align: center;
@@ -36,6 +144,11 @@ header {
     
 
 }
+
+
+
+
+
 
 .gen-toggle a {
     text-decoration: none;
@@ -53,15 +166,7 @@ header {
     
 }
 
-#roster-body {
-        background: url('IMG_5806.jpg')no-repeat center center fixed;
-    
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-    font-family: 'Oswald', sans-serif;
-}
+
 a {
     font-family: 'Raleway', sans-serif;
 }
@@ -101,60 +206,9 @@ figure {
     border-color: black;
     font-family: 'Raleway', sans-serif;
 }
-#home-button {
-    font-size: 25px;
-    padding: 5px;
-/*    border: solid 2px;*/
-    text-decoration: none !important;
-    color: white !important;
-    transition: .5s;
-    background-color: transparent !important;
-    top: 200px;
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-}
-
-#home-button a{
-    text-decoration: none !important;
-}
-
-#home-button:hover{
-    width: 500px;
-    transition: .5s;
-    color: seagreen !important;
-/*    font-size: 30px;*/
-}
-
-#home-button:hover + #home-subtitle {
-    color: white;
-    border-top: 5px solid;
-    border-top-color: seagreen;
-    border-top-width: 10px;
-    transition: .5s;
-    font-size: 115px;
-}
-
-.navbar {
-    background-color: transparent;
-    border: none;
-}
 
 
-.navbar a{
-    font-family: 'Raleway', sans-serif;
-    color: white !important;
-    text-decoration: none;
-    font-size: 15px;
-    transition: 1s;
-}
 
-.navbar a:hover {
-    color: grey !important;
-    border-bottom: 3px solid;
-    border-bottom-color: #2e8b57;
-    padding-bottom: 2px;
-    transition: .5s;
-}
 
 .profile {
     position: relative;
