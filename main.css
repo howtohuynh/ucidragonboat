@@ -1,6 +1,8 @@
+/*Navigation Bar*/
 .navbar {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.25);
     border: none;
+/*    padding-bottom: 5px;*/
 }
 
 .navbar-brand {
@@ -23,7 +25,9 @@
     transition: .5s;
 }
 
-#cover-page {
+/* Home Page */
+
+#home-page {
     background: url('IMG_6203.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -33,7 +37,7 @@
     position: relative;
 }
 
-#cover-page-text {
+#home-page-text {
     color: white;
     font-family: 'Oswald', sans-serif;
 }
@@ -46,12 +50,13 @@
 }
 
 #home-subtitle {
-    font-size: 100px;
+    font-size: 95px;
     transition: .5s;
     border-top: 0px solid;
     position: relative;
     bottom: 20px;
 }
+
 #home-button {
     font-size: 25px;
     padding: 5px;
@@ -72,23 +77,14 @@
 
 #home-button:hover + #home-subtitle {
     color: white;
-    border-top: 5px solid;
-    border-top-color: seagreen;
-    border-top-width: 10px;
     transition: .5s;
     font-size: 115px;
+    text-shadow: 5px 5px black;
 }
 
-
-.bottom-curve {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
-
-#about {
+#about-page {
     min-height: 125vh;
-    font-family: 'Oswald', sans-serif;  
+    font-family: 'Raleway', sans-serif;  
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -97,19 +93,17 @@
     position: relative;
 }
 
-.about-header {
-    text-align: center;
-    background-color: transparent;
-    font-size: 50px;
-    color: #1d5d39;
-}
+
 
 .about-text {
     font-size: 20px;
+    color: #333333;
+/*    font-weight: bold;*/
 }
 
 #about-links {
-    margin-top: 50px;   
+    margin-top: 50px;
+    min-height: 25vh;
 }
 .about-link {
     font-size: 25px;
@@ -118,17 +112,18 @@
 }
 
 .about-link:hover {
-    color: #1d5d39;
     text-decoration: none;
     transition: .5s;
     font-size: 30px;
-    border-bottom: solid 5px;
+    color: #1d5d39;
 }
 
-footer {
-    background-color: #1d5d39;
-    min-height: 10vh;
+.about-link a:hover {
+    color: #1d5d39;
 }
+
+
+/* Roster Page */
 
 #roster-page {
     background: url('IMG_5806.jpg') no-repeat center center fixed;
@@ -138,25 +133,6 @@ footer {
     -o-background-size: cover;
     min-height: 125vh;
     position: relative;
-}
-#roster-page-text {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    top: 200px;
-        opacity: .90;
-        color: ghostwhite;
-}
-#roster-title {
-    font-size: 200px;
-}
-
-#roster-subtitle {
-    font-size: 45px;
-    font-style: italic;
-}
-#member-heading {
-    font-size: 75px;
-    margin-top: 100px;
 }
 #roster-members {
     position: relative;
@@ -168,9 +144,18 @@ footer {
 .profile-text {
     text-align: left;
 }
+.profile-picture {
+    transition: .5s;
+}
+.profile-picture:hover {
+    opacity: .75;
+    transition: .5s;
+}
 .board-position {
     color: #1d5d39;
     font-size: 20px;
+    font-style: italic;
+    
 }
 .profile-name {
     font-size: 50px;
@@ -179,9 +164,14 @@ footer {
 .profile-gen {
     color: #1d5d39;
     font-size: 20px;
+    font-family: 'PT-Sans', sans-serif;
+    font-weight: bold;
 }
+
+/* Recruitment Page */
+
 #recruitment-page {
-    background: url('IMG_5818.jpg') no-repeat center center fixed;
+    background: url('IMG_6366.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -189,29 +179,25 @@ footer {
     min-height: 125vh;
     position: relative;
 }
-#recruitment-page-text {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    top: 200px;
-        opacity: .90;
-        color: ghostwhite;
-}
-#recruitment-title {
-    font-size: 150px;
-}
+
 #recruitment-info {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     position: relative;
 }
-#recruitment-header {
-    font-size: 50px;
-    color: #1d5d39;
 
-}
-#recruitment-faq {
+/* Results Page */
+#15-gen {
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
 }
+#results-body {
+    position: relative;
+    
+}
+
+
 #results-page {
     background: url('IMG_6672%202.jpg')no-repeat center center;
     
@@ -223,7 +209,6 @@ footer {
     position: relative;
     min-height: 125vh;
 }
-
 
 a {
     font-family: 'Raleway', sans-serif;
@@ -239,10 +224,10 @@ figure {
 }
 .fa {
 }
+
 .medal {
     margin: 10px;
 }
-
 
 
 
@@ -253,47 +238,246 @@ figure {
 .races {
     border: 1px solid;
     border-radius: 10px;
-    box-shadow: 0px 2px 0px 2px;
+    box-shadow: 2px 2px 15px 0px;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.75);
-/*    color: seagreen;*/
-    border-color: black;
+    background-color: rgb(255, 255, 255);
+    border-color: #555555;
     font-family: 'Raleway', sans-serif;
 }
 
+/* Accordion */
 
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
-
-
-.faq-title > a:before {
-    float: left !important;
-    font-family: FontAwesome;
-    content:"\f068";
-    padding-right: 15px;
-    color: #1d5d39;
-    font-size: 25px;
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: left;        /* adjust as needed */
+    color: #1d5d39;         /* adjust as needed */
 }
 
-.faq-title > a.collapsed:before {
-    float: left !important;
-    content:"\f067";
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
-.faq-title > a:hover, 
-.faq-title > a:active, 
-.faq-title > a:focus  {
-    text-decoration:none;
-}
-.faq-question {
+
+.panel-title {
     float: left;
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
+    color: #555555;
+    transition: .5s;
 }
 
-.faq-answer {
+.panel-question {
+    display: inline-block;
+    margin-left: 15px;
+    transition: .5s;
+}
+
+
+.panel-title:hover {
+    color: #555555 !important;
+    transition: 1s;
+}
+.panel-heading {
+    height: 35px;
+    background-color: #ffffff !important;
+    transition: .5s;
+    border: none !important;
+}
+
+.panel-heading:hover {
+    transition: .5s;
+}
+
+.panel-heading:hover .panel-question {
+    color: #959595;
+    transition: .25s;
+}
+
+.panel-heading:hover .accordion-toggle:after {
+    color: #555555;
+    transition: .5s;
+}
+.panel-title:hover .accordion-toggle:after {
+    color: #1d5d39;
+    transition: 1s;
+    background-color: transparent;
+}
+
+.panel-title:hover .accordion-toggle:after {
+    transition: 1s;
+}
+
+.panel-body {
     text-align: justify;
-        padding-left: 35px;
+}
+
+.panel {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* CONTACT PAGE */
+
+#contact-body {
+    position: relative;
+}
+
+#contact-page {
+        background: url('IMG_6356.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: 125vh;
+    position: relative;
+}
+
+.fa-social-media-icons {
+    font-size: 50px !important;
+    padding: 25px; 
+    text-decoration: none;
+}
+.fa a{
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    color: #3B5998;
+    transition: .5s;
+}
+
+.fa-facebook:hover {
+    color: rgba(59, 89, 152, 0.5);
+    transition: .5s;
+}
+
+.fa-instagram {
+    color: #8a3ab9;
+    transition: .5s;
+}
+
+.fa-instagram:hover {
+/*    background: #8a3ab9;*/
+    color: rgba(138, 58, 185, 0.49);
+    transition: .5s;
+}
+
+.fa-youtube-play {
+    color: #cc181e;
+    transition: .5s;
+}
+
+.fa-youtube-play:hover {
+    color: rgba(204, 24, 30, 0.5);
+    transition: .5s;
+}
+
+.fa-envelope a{
+    color: #c71610;
+
+}
+
+#email {
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: black;
+    transition: .5s;
+}
+
+#email:hover {
+    color: gray;
+    transition: .5s;
+}
+/* Footer */
+footer {
+    background-color: #1d5d39;
+    min-height: 20vh;
+}
+
+/* Helper/Universal Classes */
+.bottom-curve {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.page-heading {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    top: 200px;
+        opacity: 1;
+        color: ghostwhite;
+
+}
+
+.page-title {
+    font-size: 150px;
+        text-shadow: 3px 3px black;
+}
+
+.page-subtitle {
+    font-size: 45px;
+    font-style: italic;
+            text-shadow: 3px 3px black;
+}
+
+.section-header {
+    text-align: center;
+    background-color: transparent;
+    font-size: 50px;
+    color: #1d5d39;
+    font-family: 'Cabin', sans-serif;
     margin-bottom: 10px;
+    margin-top: 25px;
 }
 
 
+
+@media only screen and (max-width: 767px) {
+    #home-title {
+        font-size: 75px;
+        top: 200px;
+    }
+    #home-subtitle {
+        font-size: 40px;
+        top: 150px;
+    }
+
+    #home-button:hover + #home-subtitle {
+        font-size: 45px;
+    }
+    .section-header {
+        text-align: center;
+        background-color: transparent;
+        font-size: 25px;
+        color: #1d5d39;
+        font-family: 'Cabin', sans-serif;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+    .about-text {
+        font-size: 15px;
+    }
+    .page-heading {
+        top: 300px;
+    }
+    .page-title {
+        font-size: 50px;
+    }
+
+    .page-subtitle {
+        font-size: 25px;
+    }
+    .profile-text {
+        text-align: center;
+    }
+}
