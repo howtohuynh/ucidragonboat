@@ -28,7 +28,7 @@
 /* Home Page */
 
 #home-page {
-    background: url('IMG_6203.jpg') no-repeat center center fixed;
+    background: url('/static/IMG_6203.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -126,7 +126,7 @@
 /* Roster Page */
 
 #roster-page {
-    background: url('IMG_5806.jpg') no-repeat center center fixed;
+    background: url('/static/IMG_5806.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -171,7 +171,7 @@
 /* Recruitment Page */
 
 #recruitment-page {
-    background: url('IMG_6366.jpg') no-repeat center center fixed;
+    background: url('/static/IMG_6366.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -199,7 +199,7 @@
 
 
 #results-page {
-    background: url('IMG_6672%202.jpg')no-repeat center center;
+    background: url('/static/IMG_6672%202.jpg')no-repeat center center;
     
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -323,7 +323,7 @@ figure {
 }
 
 #contact-page {
-        background: url('IMG_6356.jpg') no-repeat center center fixed;
+        background: url('/static/IMG_6356.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
